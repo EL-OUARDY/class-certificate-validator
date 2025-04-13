@@ -18,7 +18,7 @@ git clone https://github.com/EL-OUARDY/class-certificate-validator.git
 2- Navigate to the project directory:
 
 ```bash
-cd certificate-validator
+cd class-certificate-validator
 ```
 
 3- Create a virtual environment (optional but recommended):

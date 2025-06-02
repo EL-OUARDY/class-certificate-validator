@@ -7,6 +7,8 @@
 
 I built this website for my students after completing a 12-week class at a youth center in my town, in collaboration with Peace Corps volunteers. It highlights the activities we did in class and the curriculum we followed. The site also includes a simple algorithm using Flask to validate issued certificates, allowing direct QR code scanning on the certificates.
 
+![Demo](demo.gif)
+
 ## Installation
 
 1- Clone the repository:

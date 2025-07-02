@@ -1,27 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Not Found</title>
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
+    <link rel="stylesheet" href="../static/css/style.css" />
+  </head>
 
-<body>
-    <main class="flex h-screen w-full flex-col items-center justify-center bg-[#1A2238]">
-        <h1 class="text-9xl font-extrabold tracking-widest text-white">404</h1>
-        <div class="absolute rotate-12 rounded bg-blue-600 px-2 text-base text-white">Page Not Found</div>
-        <button class="mt-5">
-            <a href="/"
-                class="group relative inline-block text-sm font-medium text-blue-600 focus:outline-none focus:ring active:text-blue-500">
-                <span
-                    class="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-blue-600 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
+  <body>
+    <header>
+      <nav class="border-gray-800 border-b-2 px-4 py-2.5 lg:px-6 bg-gray-900">
+        <div
+          class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between"
+        >
+          <a href="/" class="flex items-center">
+            <div
+              class="bg-gradient-to-r font-semibold self-center text-xl whitespace-nowrap from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent py-1"
+            >
+              &lt;/&gt; CodeCrafters
+            </div>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main
+      class="flex h-screen w-full flex-col items-center justify-center bg-[#1A2238]"
+    >
+      <h1 class="text-9xl font-extrabold tracking-widest text-white">404</h1>
+      <div
+        class="absolute rotate-12 rounded bg-blue-600 px-2 text-base text-white"
+      >
+        Page Not Found
+      </div>
+      <button class="mt-5">
+        <a
+          href="/"
+          class="group relative inline-block text-sm font-medium text-blue-600 focus:outline-none focus:ring active:text-blue-500"
+        >
+          <span
+            class="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-blue-600 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"
+          ></span>
 
-                <span class="relative text-base block border border-current bg-[#1A2238] px-8 py-3"> Go Home </span>
-            </a>
-        </button>
+          <span
+            class="relative text-base block border border-current bg-[#1A2238] px-8 py-3"
+          >
+            Go Home
+          </span>
+        </a>
+      </button>
     </main>
-</body>
-
+  </body>
 </html>

@@ -47,14 +47,14 @@
             <span class="text-blue-600 font-bold">{{student.name}}</span> has
             successfully completed the
             <span class="text-blue-600 font-bold">
-              Fundamentals of Programming course </span
+              Fundamentals of Programming course</span
             >. Over 12 weeks, they demonstrated proficiency in essential
             programming concepts, Python algorithms, and web development skills
             through hands-on projects and practical learning.
           </p>
           <p class="p-4 max-w-2xl">
             <img
-              src="../static/img/certificates/{{student.certificate}}"
+              src="{{ url_for('public_files', filename='certificates/' + student.certificate) }}"
               class="rounded-lg shadow-lg"
               alt="{{student.name}}"
             />
@@ -68,7 +68,7 @@
 
             <a
               class="mt-2 flex justify-center w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-              href="../static/img/certificates/{{student.certificate}}"
+              href="{{ url_for('public_files', filename='certificates/' + student.certificate) }}"
             >
               <div class="flex gap-2 items-center">
                 <svg

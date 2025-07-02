@@ -1,4 +1,4 @@
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, abort, send_from_directory
 from dotenv import load_dotenv
 import os
 import csv
@@ -39,6 +39,11 @@ def curriculum():
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("404.html"), 404
+
+
+@app.route("/public/<path:filename>")
+def public_files(filename):
+    return send_from_directory("public", filename)
 
 
 if __name__ == "__main__":
